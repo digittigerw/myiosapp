@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Smiley_ViewController : UIViewController
+@interface Smiley_ViewController : UIViewController <UISplitViewControllerDelegate>
 
+// value: 0 - 99 : sad - happy
 @property (nonatomic) int happiness;
 
 @end

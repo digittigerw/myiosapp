@@ -15,6 +15,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UISplitViewController* split_vc = (UISplitViewController*)self.window.rootViewController;
+        UINavigationController* right_nvc = (UINavigationController*)[split_vc.viewControllers lastObject]; 
+        id<UISplitViewControllerDelegate> delegate = (id <UISplitViewControllerDelegate>)right_nvc.topViewController;
+        
+        [split_vc setDelegate:delegate];
+    }
+    
     return YES;
 }
 							

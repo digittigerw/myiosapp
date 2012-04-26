@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0044AAC81545FBCE00C73048 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0044AAC71545FBCD00C73048 /* SelectorViewController.m */; };
+		00C53CFF15475EB6001B9880 /* Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C53CFE15475EB6001B9880 /* Family.m */; };
 		8848A5C314D59FF5008C7245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848A5C214D59FF5008C7245 /* UIKit.framework */; };
 		8848A5C514D59FF5008C7245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848A5C414D59FF5008C7245 /* Foundation.framework */; };
 		8848A5C714D59FF5008C7245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848A5C614D59FF5008C7245 /* CoreGraphics.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0044AAC61545FBCD00C73048 /* SelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorViewController.h; sourceTree = "<group>"; };
+		0044AAC71545FBCD00C73048 /* SelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
+		00C53CFD15475EB6001B9880 /* Family.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Family.h; path = Model/Family.h; sourceTree = "<group>"; };
+		00C53CFE15475EB6001B9880 /* Family.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Family.m; path = Model/Family.m; sourceTree = "<group>"; };
 		8848A5BE14D59FF4008C7245 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8848A5C214D59FF5008C7245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8848A5C414D59FF5008C7245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C53CFB15475E48001B9880 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00C53CFD15475EB6001B9880 /* Family.h */,
+				00C53CFE15475EB6001B9880 /* Family.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8848A5B314D59FF4008C7245 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +132,7 @@
 		8848A5C814D59FF5008C7245 /* Smiley */ = {
 			isa = PBXGroup;
 			children = (
+				00C53CFB15475E48001B9880 /* Model */,
 				8848A5D114D59FF5008C7245 /* Smiley_AppDelegate.h */,
 				8848A5D214D59FF5008C7245 /* Smiley_AppDelegate.m */,
 				8848A5D414D59FF5008C7245 /* MainStoryboard_iPhone.storyboard */,
@@ -127,6 +143,8 @@
 				8848A5DB14D59FF5008C7245 /* Smiley_ViewController.m */,
 				8848A5C914D59FF5008C7245 /* Supporting Files */,
 				88CC2AA014D9DAA500179FF4 /* SmileDisplayerProtocol.h */,
+				0044AAC61545FBCD00C73048 /* SelectorViewController.h */,
+				0044AAC71545FBCD00C73048 /* SelectorViewController.m */,
 			);
 			path = Smiley;
 			sourceTree = "<group>";
@@ -272,6 +290,8 @@
 				8848A5D314D59FF5008C7245 /* Smiley_AppDelegate.m in Sources */,
 				8848A5DC14D59FF5008C7245 /* Smiley_ViewController.m in Sources */,
 				8848A5FC14D7A297008C7245 /* FaceView.m in Sources */,
+				0044AAC81545FBCE00C73048 /* SelectorViewController.m in Sources */,
+				00C53CFF15475EB6001B9880 /* Family.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

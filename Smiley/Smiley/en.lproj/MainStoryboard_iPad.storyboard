@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch.iPad" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="BjT-rD-dma">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
         <scene sceneID="4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="Smiley_ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                    <view key="view" contentMode="scaleToFill" id="5" customClass="FaceView">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Face" id="OMH-oI-VHO"/>
+                    <connections>
+                        <outlet property="faceView" destination="5" id="WJV-a7-xjy"/>
+                    </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="1019" y="1058"/>
+        </scene>
+        <scene sceneID="2Xw-HY-mHl">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXP-QC-Nl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="d5I-Xr-fbs" customClass="SelectorViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="srr-ve-nG2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reuse_id" id="L4V-VS-8jU">
+                                <rect key="frame" x="0.0" y="34" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="d5I-Xr-fbs" id="PDB-Ll-51a"/>
+                            <outlet property="delegate" destination="d5I-Xr-fbs" id="mJB-fh-jj1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select" id="laX-SV-dPT">
+                        <barButtonItem key="backBarButtonItem" title="Exit" id="8hx-zy-tb3"/>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="722" y="-8"/>
+        </scene>
+        <scene sceneID="gDm-gd-HNp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mz-rQ-qAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="d2o-Nu-qbE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="SEo-rL-OCu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d5I-Xr-fbs" kind="relationship" relationship="rootViewController" id="NXI-6F-DNX"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="188" y="-9"/>
+        </scene>
+        <scene sceneID="6eD-6c-PZY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnd-9F-L7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <splitViewController id="BjT-rD-dma" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="d2o-Nu-qbE" kind="relationship" relationship="masterViewController" id="RSM-CT-QpC"/>
+                        <segue destination="dBj-rj-KeV" kind="relationship" relationship="detailViewController" id="AMO-Fh-2rt"/>
+                    </connections>
+                </splitViewController>
+            </objects>
+            <point key="canvasLocation" x="-1070" y="526"/>
+        </scene>
+        <scene sceneID="1z3-Es-SZz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA0-jA-OQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="dBj-rj-KeV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="TJC-ub-k5N">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="z82-zK-tdt"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="166" y="1058"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="FaceView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FaceView.h"/>
+        </class>
+        <class className="SelectorViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectorViewController.h"/>
+        </class>
+        <class className="Smiley_ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Smiley_ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="faceView" candidateClass="FaceView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

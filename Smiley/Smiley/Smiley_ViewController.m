@@ -27,7 +27,8 @@
 
 -(void)setHappiness:(int)happiness {
     _happiness = happiness;
-    [self.faceView setNeedsDisplay];
+    if (self.smileDisplayer)
+        [self.smileDisplayer showHappiness:happiness];
 }
 
 - (void)setFaceView:(FaceView *)faceView
@@ -100,5 +101,14 @@
         return YES;
     }
 }
+
+#pragma mark - SplitViewControllerDelegate
+- (BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation {
+    if (orientation == UIInterfaceOrientationPortrait)
+        return YES;
+    
+    return NO;
+}
+
 
 @end

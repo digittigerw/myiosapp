@@ -52,6 +52,11 @@
     UIGestureRecognizer* gr = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self addGestureRecognizer:gr];
 
+    /* As exercise, we do this in ViewController.
+    gr = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinch:)];
+    [self addGestureRecognizer:gr];
+    */
+    
     gr = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mySwipe:)];
     [self addGestureRecognizer:gr];
 
@@ -68,10 +73,11 @@
 }
 
 // For controller to change happiness.
-// Not used yet.
-//
+// argument: 
+//   happiness: 0 - 99
 - (void)showHappiness:(int)happiness 
 {
+    // Convert to our scale
     self.happiness = (happiness % 100 - 50) / 50.0;
     
     [self setNeedsDisplay]; // redraw

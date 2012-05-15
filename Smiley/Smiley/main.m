@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "Smiley_AppDelegate.h"
+#import "SmileyAppDelegate.h"
 
 int main(int argc, char *argv[])
 {

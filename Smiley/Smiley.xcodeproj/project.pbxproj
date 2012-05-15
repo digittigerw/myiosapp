@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		0044AAC81545FBCE00C73048 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0044AAC71545FBCD00C73048 /* SelectorViewController.m */; };
 		00C53CFF15475EB6001B9880 /* Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C53CFE15475EB6001B9880 /* Family.m */; };
+		00ED8B711562D4CF00AE50AD /* SmileyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8B701562D4CF00AE50AD /* SmileyAppDelegate.m */; };
 		8848A5C314D59FF5008C7245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848A5C214D59FF5008C7245 /* UIKit.framework */; };
 		8848A5C514D59FF5008C7245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848A5C414D59FF5008C7245 /* Foundation.framework */; };
 		8848A5C714D59FF5008C7245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848A5C614D59FF5008C7245 /* CoreGraphics.framework */; };
 		8848A5CD14D59FF5008C7245 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8848A5CB14D59FF5008C7245 /* InfoPlist.strings */; };
 		8848A5CF14D59FF5008C7245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848A5CE14D59FF5008C7245 /* main.m */; };
-		8848A5D314D59FF5008C7245 /* Smiley_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848A5D214D59FF5008C7245 /* Smiley_AppDelegate.m */; };
 		8848A5D614D59FF5008C7245 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8848A5D414D59FF5008C7245 /* MainStoryboard_iPhone.storyboard */; };
 		8848A5D914D59FF5008C7245 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8848A5D714D59FF5008C7245 /* MainStoryboard_iPad.storyboard */; };
 		8848A5DC14D59FF5008C7245 /* SmileyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848A5DB14D59FF5008C7245 /* SmileyViewController.m */; };
@@ -41,6 +41,8 @@
 		0044AAC71545FBCD00C73048 /* SelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
 		00C53CFD15475EB6001B9880 /* Family.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Family.h; path = Model/Family.h; sourceTree = "<group>"; };
 		00C53CFE15475EB6001B9880 /* Family.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Family.m; path = Model/Family.m; sourceTree = "<group>"; };
+		00ED8B6F1562D4CF00AE50AD /* SmileyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmileyAppDelegate.h; sourceTree = "<group>"; };
+		00ED8B701562D4CF00AE50AD /* SmileyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmileyAppDelegate.m; sourceTree = "<group>"; };
 		8848A5BE14D59FF4008C7245 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8848A5C214D59FF5008C7245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8848A5C414D59FF5008C7245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,8 +51,6 @@
 		8848A5CC14D59FF5008C7245 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8848A5CE14D59FF5008C7245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8848A5D014D59FF5008C7245 /* Smiley-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smiley-Prefix.pch"; sourceTree = "<group>"; };
-		8848A5D114D59FF5008C7245 /* Smiley_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Smiley_AppDelegate.h; sourceTree = "<group>"; };
-		8848A5D214D59FF5008C7245 /* Smiley_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Smiley_AppDelegate.m; sourceTree = "<group>"; };
 		8848A5D514D59FF5008C7245 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		8848A5D814D59FF5008C7245 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8848A5DA14D59FF5008C7245 /* SmileyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmileyViewController.h; sourceTree = "<group>"; };
@@ -132,19 +132,19 @@
 		8848A5C814D59FF5008C7245 /* Smiley */ = {
 			isa = PBXGroup;
 			children = (
-				00C53CFB15475E48001B9880 /* Model */,
-				8848A5D114D59FF5008C7245 /* Smiley_AppDelegate.h */,
-				8848A5D214D59FF5008C7245 /* Smiley_AppDelegate.m */,
+				00ED8B6F1562D4CF00AE50AD /* SmileyAppDelegate.h */,
+				00ED8B701562D4CF00AE50AD /* SmileyAppDelegate.m */,
 				8848A5D414D59FF5008C7245 /* MainStoryboard_iPhone.storyboard */,
 				8848A5FA14D7A297008C7245 /* FaceView.h */,
 				8848A5FB14D7A297008C7245 /* FaceView.m */,
 				8848A5D714D59FF5008C7245 /* MainStoryboard_iPad.storyboard */,
 				8848A5DA14D59FF5008C7245 /* SmileyViewController.h */,
 				8848A5DB14D59FF5008C7245 /* SmileyViewController.m */,
-				8848A5C914D59FF5008C7245 /* Supporting Files */,
 				88CC2AA014D9DAA500179FF4 /* SmileDisplayerProtocol.h */,
 				0044AAC61545FBCD00C73048 /* SelectorViewController.h */,
 				0044AAC71545FBCD00C73048 /* SelectorViewController.m */,
+				00C53CFB15475E48001B9880 /* Model */,
+				8848A5C914D59FF5008C7245 /* Supporting Files */,
 			);
 			path = Smiley;
 			sourceTree = "<group>";
@@ -287,11 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8848A5CF14D59FF5008C7245 /* main.m in Sources */,
-				8848A5D314D59FF5008C7245 /* Smiley_AppDelegate.m in Sources */,
 				8848A5DC14D59FF5008C7245 /* SmileyViewController.m in Sources */,
 				8848A5FC14D7A297008C7245 /* FaceView.m in Sources */,
 				0044AAC81545FBCE00C73048 /* SelectorViewController.m in Sources */,
 				00C53CFF15475EB6001B9880 /* Family.m in Sources */,
+				00ED8B711562D4CF00AE50AD /* SmileyAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

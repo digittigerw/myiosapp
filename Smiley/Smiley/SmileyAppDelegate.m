@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Smiley_AppDelegate.h"
+#import "SmileyAppDelegate.h"
 
 @implementation Smiley_AppDelegate
 

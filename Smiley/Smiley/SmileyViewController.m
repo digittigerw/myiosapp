@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Smiley_ViewController.h"
+#import "SmileyViewController.h"
 #import "FaceView.h"
 #import "SmileDisplayerProtocol.h"
 
-@interface Smiley_ViewController()
+@interface SmileyViewController()
 
 @property (weak, nonatomic) IBOutlet FaceView *faceView;
 
@@ -19,7 +19,7 @@
 @end
 
 
-@implementation Smiley_ViewController
+@implementation SmileyViewController
 
 @synthesize happiness = _happiness;
 @synthesize faceView = _faceView;

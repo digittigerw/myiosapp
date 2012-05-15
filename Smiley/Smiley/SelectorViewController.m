@@ -8,7 +8,7 @@
 
 #import "SelectorViewController.h"
 #import "Family.h"
-#import "Smiley_ViewController.h"
+#import "SmileyViewController.h"
 
 @implementation SelectorViewController
 
@@ -162,7 +162,7 @@
     
     UINavigationController* detail_nvc = [[self.splitViewController viewControllers] lastObject];
     
-    Smiley_ViewController* svc = (Smiley_ViewController*)[detail_nvc topViewController];
+    SmileyViewController* svc = (SmileyViewController*)[detail_nvc topViewController];
     
     NSAssert(svc != nil, @"Fail to get smiley view controler.");
     

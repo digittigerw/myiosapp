@@ -8,7 +8,7 @@
 
 #import "SmileyAppDelegate.h"
 
-@implementation Smiley_AppDelegate
+@implementation SmileyAppDelegate
 
 @synthesize window = _window;
 

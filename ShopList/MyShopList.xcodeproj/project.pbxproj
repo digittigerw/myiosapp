@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005B58951558F1DA009FBAA6 /* groceries_01.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 00B40FB41551EF4F00E637AB /* groceries_01.sqlite3 */; };
 		00B40F6C15518A8700E637AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B40F6B15518A8700E637AB /* UIKit.framework */; };
 		00B40F6E15518A8700E637AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B40F6D15518A8700E637AB /* Foundation.framework */; };
 		00B40F7015518A8700E637AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B40F6F15518A8700E637AB /* CoreGraphics.framework */; };
@@ -45,18 +46,18 @@
 		00B40F6B15518A8700E637AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00B40F6D15518A8700E637AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00B40F6F15518A8700E637AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		00B40F7315518A8700E637AB /* MyShopList-Info.plist */ = {isa = PBXFileReference; path = "MyShopList-Info.plist"; sourceTree = "<group>"; };
+		00B40F7315518A8700E637AB /* MyShopList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyShopList-Info.plist"; sourceTree = "<group>"; };
 		00B40F7515518A8700E637AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00B40F7715518A8700E637AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		00B40F7915518A8700E637AB /* MyShopList-Prefix.pch */ = {isa = PBXFileReference; path = "MyShopList-Prefix.pch"; sourceTree = "<group>"; };
-		00B40F7A15518A8700E637AB /* MyShopListAppDelegate.h */ = {isa = PBXFileReference; path = MyShopListAppDelegate.h; sourceTree = "<group>"; };
+		00B40F7915518A8700E637AB /* MyShopList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyShopList-Prefix.pch"; sourceTree = "<group>"; };
+		00B40F7A15518A8700E637AB /* MyShopListAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyShopListAppDelegate.h; sourceTree = "<group>"; };
 		00B40F7B15518A8700E637AB /* MyShopListAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShopListAppDelegate.m; sourceTree = "<group>"; };
 		00B40F7D15518A8700E637AB /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		00B40F8415518A8700E637AB /* MyShopListTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyShopListTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B40F8515518A8700E637AB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		00B40F8D15518A8700E637AB /* MyShopListTests-Info.plist */ = {isa = PBXFileReference; path = "MyShopListTests-Info.plist"; sourceTree = "<group>"; };
+		00B40F8D15518A8700E637AB /* MyShopListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyShopListTests-Info.plist"; sourceTree = "<group>"; };
 		00B40F8F15518A8700E637AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		00B40F9115518A8700E637AB /* MyShopListTests.h */ = {isa = PBXFileReference; path = MyShopListTests.h; sourceTree = "<group>"; };
+		00B40F9115518A8700E637AB /* MyShopListTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyShopListTests.h; sourceTree = "<group>"; };
 		00B40F9215518A8700E637AB /* MyShopListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShopListTests.m; sourceTree = "<group>"; };
 		00B40FA015518B8700E637AB /* Storyboard_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iphone.storyboard; sourceTree = "<group>"; };
 		00B40FA315518CF900E637AB /* GroceryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryTableViewController.h; sourceTree = "<group>"; };
@@ -292,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005B58951558F1DA009FBAA6 /* groceries_01.sqlite3 in Resources */,
 				00B40F9015518A8700E637AB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
